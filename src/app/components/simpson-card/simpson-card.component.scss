@@ -1,0 +1,46 @@
+@import "../../styles/typography";
+@import "../../styles/colors";
+
+.card-container {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(230, 228, 146, 0.5);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+
+  &__image-container {
+    width: 100%;
+    height: 80px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding-top: 5px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+
+  &__text-container {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__character-name {
+    font-size: 18px;
+    font-family: "Rock Salt", cursive, sans-serif;
+    margin-bottom: 5px;
+  }
+
+  &__description {
+    font-size: 16px;
+    font-family: Nunito, sans-serif;
+    margin-bottom: 5px;
+  }
+}

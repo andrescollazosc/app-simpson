@@ -1,0 +1,16 @@
+<div class="card-container">
+  <div class="card-container__image-container">
+    <img
+      [src]="simpsonRquest.image"
+      [alt]="simpsonRquest.character"
+    />
+  </div>
+  <div class="card-container__text-container">
+      <div class="card-container__character-name">
+          {{ simpsonRquest.character }}
+      </div>
+      <div class="card-container__description">
+          {{ simpsonRquest.quote }}
+      </div>
+  </div>
+</div>
