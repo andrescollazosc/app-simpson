@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { SimpsonCardComponent } from './components/simpson-card/simpson-card.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SpinnerComponent } from './components/spinner/spinner.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    SimpsonCardComponent
+    SimpsonCardComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,9 @@
 <div class="row">
+
+  <app-spinner *ngIf="isLoading">
+    
+  </app-spinner>
+
   <app-simpson-card
     *ngFor="let simpson of charactersSimpson"
     class="col-12 col-sm-6 col-md-4 col-lg-4"

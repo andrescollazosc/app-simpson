@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { RESOURCES_CONSTANTS } from 'src/app/constants/resources.constants';
 import { SimpsonModel } from 'src/app/models/simpson.model';
 
 @Component({
@@ -9,8 +10,16 @@ import { SimpsonModel } from 'src/app/models/simpson.model';
 export class SimpsonCardComponent implements OnInit {
 
   @Input() simpsonRquest: SimpsonModel = {};
+  public resources = RESOURCES_CONSTANTS.DEFAULT_RESOURCES;
 
   ngOnInit(): void {
+    this.initializeData();
+  }
+
+  private initializeData(): void{
+    if (this.simpsonRquest.image == null) {
+      this.simpsonRquest.image = this.resources.IMAGE;
+    }
   }
 
 }
